@@ -18,6 +18,7 @@ LOBEnterpriseApp/LOBEnterpriseApp-web/.project
 LOBEnterpriseApp/LOBEnterpriseApp-web/.classpath
 LOBEnterpriseApp/LOBEnterpriseApp-ear/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
 LOBEnterpriseApp/LOBEnterpriseApp-ear/.classpath
+<<<<<<< HEAD
 LOBEnterpriseApp/LOBEnterpriseApp-web/.settings/org.eclipse.wst.validation.prefs
 LOBEnterpriseApp/LOBEnterpriseApp-web/.settings/org.eclipse.wst.jsdt.ui.superType.name
 LOBEnterpriseApp/LOBEnterpriseApp-web/.settings/org.eclipse.wst.jsdt.ui.superType.container
@@ -28,3 +29,6 @@ LOBEnterpriseApp/LOBEnterpriseApp-web/.settings/.jsdtscope
 LOBEnterpriseApp/LOBEnterpriseApp-ear/.settings/org.eclipse.wst.validation.prefs
 LOBEnterpriseApp/LOBEnterpriseApp-ear/.settings/org.eclipse.wst.common.project.facet.core.xml
 LOBEnterpriseApp/LOBEnterpriseApp-ear/.settings/org.eclipse.wst.common.component
+=======
+/.project
+>>>>>>> 399e0b8d287ce1b666963ab89bbab7fff3c913e7
