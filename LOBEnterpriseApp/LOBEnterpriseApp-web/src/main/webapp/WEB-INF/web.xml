@@ -12,7 +12,7 @@ http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
                 </servlet-class>
         <init-param>
              <param-name>com.sun.jersey.config.property.packages</param-name>
-             <param-value>com.jwt.rest</param-value>
+             <param-value>webservice</param-value>
         </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
