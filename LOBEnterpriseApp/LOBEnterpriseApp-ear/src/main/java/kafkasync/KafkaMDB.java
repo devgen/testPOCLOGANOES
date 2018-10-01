@@ -2,10 +2,13 @@ package kafkasync;
 
 import fish.payara.cloud.connectors.kafka.api.KafkaListener;
 import fish.payara.cloud.connectors.kafka.api.OnRecord;
+import fish.payara.cloud.connectors.kafka.api.OnRecords;
 
 import javax.ejb.ActivationConfigProperty;
 import javax.ejb.MessageDriven;
 import org.apache.kafka.clients.consumer.ConsumerRecord;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 @MessageDriven(activationConfig = {
     @ActivationConfigProperty(propertyName = "clientId", propertyValue = "testClient"),
@@ -19,16 +22,18 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
     @ActivationConfigProperty(propertyName = "pollInterval", propertyValue = "30000"),    
 })
 public class KafkaMDB implements KafkaListener {
-	
+
 	private Controller controller = new Controller();
+	private static Logger LOGGER = LoggerFactory.getLogger(KafkaMDB.class);
     
     public KafkaMDB() {
         
     }
     
-    @OnRecord( topics={"test"})
+	@OnRecord( topics= {"test"})
     public void test(ConsumerRecord<Object,Object> record) {
-    	controller.saveText(record.value().toString());
-        //System.out.println("Payara Kafka MDB record " + record );
-    }    
+    	//System.out.println("Payara Kafka MDB record " + record.value().toString());
+    	LOGGER.info("a test message");
+    	controller.saveText(record.value().toString());	
+    }
 }
