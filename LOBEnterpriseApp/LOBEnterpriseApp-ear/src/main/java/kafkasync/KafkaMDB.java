@@ -20,15 +20,15 @@ import org.apache.kafka.clients.consumer.ConsumerRecord;
 })
 public class KafkaMDB implements KafkaListener {
 	
-	private Controller controller = new Controller();
+	//private Controller controller = new Controller();
     
-    public KafkaMDB() {
-        
-    }
+//    public KafkaMDB() {
+//        
+//    }
     
     @OnRecord( topics={"test"})
     public void test(ConsumerRecord<Object,Object> record) {
-    	controller.saveText(record.value().toString());
-        //System.out.println("Payara Kafka MDB record " + record );
+    	//controller.saveText(record.value().toString());
+        System.out.println("Payara Kafka MDB record " + record );
     }    
 }
