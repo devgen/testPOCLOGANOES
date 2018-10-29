@@ -42,7 +42,19 @@
 			<scope>provided</scope>
 		</dependency>
 
-
+		<dependency>
+            <groupId>fish.payara.cloud.connectors.kafka</groupId>
+            <artifactId>kafka-jca-api</artifactId>
+            <version>0.1.0</version>
+            <scope>provided</scope>
+        </dependency>
+        
+        <dependency>
+            <groupId>fish.payara.cloud.connectors.kafka</groupId>
+            <artifactId>kafka-rar</artifactId>
+            <version>0.1.0</version>
+            <type>rar</type>
+        </dependency>
 
 		<dependency>
 			<groupId>com.sun.jersey</groupId>

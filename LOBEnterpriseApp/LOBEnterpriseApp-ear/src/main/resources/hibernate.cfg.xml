@@ -21,8 +21,7 @@
         <!-- Update database on startup -->
         <property name="hibernate.hbm2ddl.auto">update</property>
  
-        <!-- Annotated entity classes -->
-        <mapping class="hibernate.Car"/>
+        <!-- Annotated entity classes -->        
         <mapping class="kafkasync.Text"/>
         
     </session-factory>
